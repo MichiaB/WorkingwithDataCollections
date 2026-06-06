@@ -12,8 +12,8 @@ for (let index = 0; index < str.length; index++) {
 // This should be calculated dynamically based on the first row of data.
 
 
-const obj = {
-  Array = [obj [0],[0]]
+const obj = [[0],[0]] 
+ for (let i =0; i < obj.lenth; i++ )
 
-};
+
 console.log(obj);
