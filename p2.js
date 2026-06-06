@@ -19,8 +19,7 @@ for (let i = 0; i < obj.lenth; i++) console.log(obj);
 //Each row should be stored in a parent array, with the heading row located at index 0.
 //Cache this two-dimensional array in a variable for later use.
 
-const map = new Map([["ID"], ["Name"]]);
+let obj1 = obj.from(csv(2), () => new obj1(4));
+obj[0][0] = 'Obej';
 
-CSV.from([map]);
-
-console.log(map);
+console.log(obj1);
