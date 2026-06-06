@@ -1,9 +1,9 @@
- // Part 1: Refactoring Old Code 
+ //Part 1: Refactoring Old Code 
 
-// csv data
+ csv data
 
 
-//const csv = [ "ID,Name,Occupation,Age \r\n\
+const csv = [ "ID,Name,Occupation,Age \r\n\
 //\r\n 42,Bruce,Knight,41 \r\n\
 //\r\n 57,Bob,Fry Cook,19\r\n\
 //\r\n 63,Blaine,Quiz Master,58\r\n\
@@ -11,24 +11,24 @@
 
 
 
-//let columns = 4; {
+let columns = 4; {
 
-//for(let row=0; row<csv.length;row++)
-  //  for(column=0;column<csv[row].length;column++)
+for(let row=0; row<csv.length;row++)
+   for(column=0;column<csv[row].length;column++)
 
-  //    if ( csv [row] [column] == "X") {
-   //   console.log (`The ${ csv [row] [column]} is at row ${row} and column ${column}`);
-   // }
-//}
+     if ( csv [row] [column] == "X") {
+     console.log (`The ${ csv [row] [column]} is at row ${row} and column ${column}`);
+    }
+}
 
 
-// Part 2: Expanding Functionality 
+ //Part 2: Expanding Functionality 
 
-//const csv = [ "ID,Name,Occupation,Age \r\n\
+const csv = [ "ID,Name,Occupation,Age \r\n\
 //\r\n 42,Bruce,Knight,41 \r\n\
 //\r\n 57,Bob,Fry Cook,19\r\n\
 //\r\n 63,Blaine,Quiz Master,58\r\n\
-//\r\n 98,Bill,Doctor’s Assistant,26" ];
+\r\n 98,Bill,Doctor’s Assistant,26" ];
 
 
 
