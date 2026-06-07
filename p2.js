@@ -19,7 +19,34 @@ for (let i = 0; i < obj.lenth; i++) console.log(obj);
 //Each row should be stored in a parent array, with the heading row located at index 0.
 //Cache this two-dimensional array in a variable for later use.
 
-let obj1 = obj.from(csv(2), () => new obj1(4));
-obj[0][0] = 'Obej';
 
-console.log(obj1);
+
+
+let CSV2 = new Array();
+
+for  (let i = 0 ; i < CSV2.length; i++){
+  CSV2[0] = new Array ();
+}
+
+console.log(CSV2);
+
+
+// Part 3: Transforming Data 
+
+
+//For each row of data in the result array produced by your code above, 
+// create an object where the key of each value is the heading for that value’s column.
+//Convert these keys to all lowercase letters for consistency.
+//Store these objects in an array, in the order that they were originally listed.
+//Since the heading for each column will be stored in the object keys,
+//  you do not need to create an object for the heading row itself.
+
+
+const ID = {
+  a :42,
+  b: 57,
+  c: 63,
+  d: 98
+};
+
+console.log(ID.keys(ID));
