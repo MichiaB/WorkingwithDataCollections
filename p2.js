@@ -9,27 +9,32 @@ for (let index = 0; index < str.length; index++) {
   console.log(str1);
 }
 
-
 //Declare a variable that stores the number of columns in each row of data within the CSV.
 //Instead of hard-coding four columns per row, expand your code to accept any number of columns.
 // This should be calculated dynamically based on the first row of data.
 
-console.log(str);
-const obj = [[0], [0]];
-for (let i = 0; i < obj.length; i++) console.log(obj);
+function column(){ 
+
+for (let i = 0; i < column.length; i++) {
+
+  let column = column.split(",");
+
+  console.log(column);
+}};
+
 
 //Store your results in a two-dimensional array.
 //Each row should be its own array, with individual entries for each column.
 //Each row should be stored in a parent array, with the heading row located at index 0.
 //Cache this two-dimensional array in a variable for later use.
 
-// let CSV2 = [];
+let CSV2 = [];
 
-// for (let i = 0; i < CSV2.length; i++) {
-//   CSV2[0] = [];
-// }
+for (let i = 0; i < CSV2.length; i++) {
+  CSV2[0] = [];
+}
 
-// console.log(CSV2);
+console.log(CSV2);
 
 // Part 3: Transforming Data
 
@@ -45,8 +50,6 @@ for (let i = 0; i < obj.length; i++) console.log(obj);
 //  // Name: "Name",
 //   //Occupation: "Occupation",
 //   //Age: "Age",
-
-
 
 // };
 
