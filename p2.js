@@ -26,15 +26,30 @@ function column() {
 //Each row should be stored in a parent array, with the heading row located at index 0.
 //Cache this two-dimensional array in a variable for later use.
 
-function createArray(length) {
-  let arr = [];
 
-  for (let i = 0; i < CSV2.length; i++) {
-    arr[0] = [];
-  }
 
-  return arr;
+const CsV3 = [
+  ID = "ID",
+ Name = "Name",
+  Occupation = "Occupation",
+  Age =  "Age",
+];
+
+for (let i = 0; i < CsV3.length; i++) {
+    CsV3[0] [0]= [];
+  
 }
+ 
+
+
+
+console.log(CsV3)
+ 
+
+
+
+
+
 
 
 
@@ -51,12 +66,5 @@ function createArray(length) {
 //Since the heading for each column will be stored in the object keys,
 //  you do not need to create an object for the heading row itself.
 
-// //const CsV3 = {
-//   //ID: "ID",
-//  // Name: "Name",
-//   //Occupation: "Occupation",
-//   //Age: "Age",
-
-// };
 
 // console.log(Object.keys(CsV3));
