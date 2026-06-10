@@ -21,41 +21,45 @@ function column() {
   }
 }
 
+function row() {
+  for (let i = 0; i < row.length; i++) {
+    let row = row.split(",");
+  }
+}
+
 //Store your results in a two-dimensional array.
 //Each row should be its own array, with individual entries for each column.
 //Each row should be stored in a parent array, with the heading row located at index 0.
 //Cache this two-dimensional array in a variable for later use.
 
+const rows = 4;
+const columns = 4;
 
 
-const CsV3 = [
-  ID = "ID",
- Name = "Name",
-  Occupation = "Occupation",
-  Age =  "Age",
-];
+const people = 
+[["ID", "Name", "Occupation", "Age"],
+ ["42", "Bruce", "Knight", "41"],
+ ["57", "Bob", "Fry Cook", "19"],
+ ["63", "Blaine", "Quiz Master", "58"],
+ ["98", "Bill", "Doctor' ’ 's Assistant", "26"]];
 
-for (let i = 0; i < CsV3.length; i++) {
-    CsV3[0] [0]= [];
-  
+
+
+// const people = [
+//   (ID = "ID"),
+//   (Name = "Name"),
+//   (Occupation = "Occupation"),
+//   (Age = "Age"),
+// ];
+
+for (let i = 0; i < people.length; i++)  {
+        console.log(
+        `ID: ${people[i][0]}, Name: ${people[i][1]}, Occupation: ${people[i][2]}, Age: ${people[i][3]}`
+);
 }
+
  
 
-
-
-console.log(CsV3)
- 
-
-
-
-
-
-
-
-
-// let CSV2 = []
-
-// console.log(CSV2);
 
 // Part 3: Transforming Data
 
@@ -67,4 +71,3 @@ console.log(CsV3)
 //  you do not need to create an object for the heading row itself.
 
 
-// console.log(Object.keys(CsV3));
