@@ -70,7 +70,7 @@ for (let i = 0; i < people.length; i++) {
 // Remove the last element from the sorted array.
 
 const people2 = [
-  ["ID", "Name", "Occupation", "Age"],
+  ["Id", "Name", "Occupation", "Age"],
   ["42", "Bruce", "Knight", "41"],
   ["57", "Bob", "Fry Cook", "19"],
   ["63", "Blaine", "Quiz Master", "58"],
@@ -82,14 +82,19 @@ console.log(people2);
 
 // Insert the following object at index 1:
 // { id: "48", name: "Barry", occupation: "Runner", age: "25" }
+
+console.log(
+  people2.unshift({ id: "48", name: "Barry", occupation: "Runner", age: "25" }),
+);
+
+people2.unshift();
+console.log(people2);
+
 // Add the following object to the end of the array:
 // { id: "7", name: "Bilbo", occupation: "None", age: "111" }
 
-const people3 = people2.unshift({
-  id: "48",
-  name: "Barry",
-  occupation: "Runner",
-  age: "25",
-});
+console.log(
+  people2.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" }),
+);
 
-console.log(people3);
+console.log(people2);
