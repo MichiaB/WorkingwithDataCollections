@@ -35,15 +35,13 @@ function row() {
 const rows = 4;
 const columns = 4;
 
-
-const people = 
-[["ID", "Name", "Occupation", "Age"],
- ["42", "Bruce", "Knight", "41"],
- ["57", "Bob", "Fry Cook", "19"],
- ["63", "Blaine", "Quiz Master", "58"],
- ["98", "Bill", "Doctor' ’ 's Assistant", "26"]];
-
-
+const people = [
+  ["ID", "Name", "Occupation", "Age"],
+  ["42", "Bruce", "Knight", "41"],
+  ["57", "Bob", "Fry Cook", "19"],
+  ["63", "Blaine", "Quiz Master", "58"],
+  ["98", "Bill", "Doctor' ’ 's Assistant", "26"],
+];
 
 // const people = [
 //   (ID = "ID"),
@@ -51,15 +49,6 @@ const people =
 //   (Occupation = "Occupation"),
 //   (Age = "Age"),
 // ];
-
-for (let i = 0; i < people.length; i++)  {
-        console.log(
-        `ID: ${people[i][0]}, Name: ${people[i][1]}, Occupation: ${people[i][2]}, Age: ${people[i][3]}`
-);
-}
-
- 
-
 
 // Part 3: Transforming Data
 
@@ -70,4 +59,37 @@ for (let i = 0; i < people.length; i++)  {
 //Since the heading for each column will be stored in the object keys,
 //  you do not need to create an object for the heading row itself.
 
+for (let i = 0; i < people.length; i++) {
+  console.log(
+    `ID: ${people[i][0]}, Name: ${people[i][1]}, Occupation: ${people[i][2]}, Age: ${people[i][3]}`,
+  );
+}
 
+// Part 4: Sorting and Manipulating Data
+
+// Remove the last element from the sorted array.
+
+const people2 = [
+  ["ID", "Name", "Occupation", "Age"],
+  ["42", "Bruce", "Knight", "41"],
+  ["57", "Bob", "Fry Cook", "19"],
+  ["63", "Blaine", "Quiz Master", "58"],
+  ["98", "Bill", "Doctor' ’ 's Assistant", "26"],
+];
+console.log(people2);
+const firstPeople2 = people2.pop();
+console.log(people2);
+
+// Insert the following object at index 1:
+// { id: "48", name: "Barry", occupation: "Runner", age: "25" }
+// Add the following object to the end of the array:
+// { id: "7", name: "Bilbo", occupation: "None", age: "111" }
+
+const people3 = people2.unshift({
+  id: "48",
+  name: "Barry",
+  occupation: "Runner",
+  age: "25",
+});
+
+console.log(people3);
