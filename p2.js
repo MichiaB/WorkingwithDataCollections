@@ -108,3 +108,5 @@ console.log(people2);
 let people3= people2.toReversed();
 
 console.log(people3);
+// console.log(typeof CSV);
+
